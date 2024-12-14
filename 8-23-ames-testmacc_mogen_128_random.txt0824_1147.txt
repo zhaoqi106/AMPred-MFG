@@ -1,0 +1,31 @@
+dataset: AMES
+seed: 0
+atom_in_dim: 37
+bond_in_dim: 13
+ss_node_in_dim: 50
+ss_edge_in_dim: 37
+mol_in_dim: 167
+learning_rate: 1e-05
+epoch: 200
+batch_size: 128
+num_neurons: [512]
+input_norm: layer
+drop_rate: 0.2
+hid_dim: 96
+device: cuda:0
+dist: 0.005
+split_ratio: [0.8, 0.1, 0.1]
+folds: 10
+n_jobs: 10
+resdual: False
+shuffle: False
+attention: True
+step: 4
+agg_op: mean
+mol_FP: ss
+gating_func: Sigmoid
+ScaleBlock: Contextual
+heads: 4
+AUROC:0.9126714975845409+-0.0021262877170534996
+0.9134038800705466 0.9133041944636147 0.9134805613066483 0.9137412775093934 0.9132735219691741 0.9083889272295069 0.9165248063798789 0.9132121769802928 0.9152595659842037 0.9161260639521508 
+AUPRC:0.9295348142338463+-0.002627943550315307
